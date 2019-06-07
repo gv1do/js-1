@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 1. Задание 1</title>
+</head>
+<body>
+<script>
+    'use strict';
+	
+	//Задание №3
+	const a = 2, b = -5;
+
+    console.log("Первое число = " + a);
+    console.log("Второе число = " + b);
+
+    if (a >= 0 && b >= 0){
+        console.log(`Разность чисел = ${a - b}`);
+    } else if (a < 0 && b < 0){
+        console.log(`Произведение чисел = ${a * b}`);
+    } else if (a >= 0 && b < 0 || a < 0 && b >= 0){
+        console.log(`Сумма чисел = ${a + b}`);
+    } else {
+        console.log("Введите число!");
+    }
+</script>
+</body>
+</html>

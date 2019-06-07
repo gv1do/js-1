@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 1. Задание 1</title>
+</head>
+<body>
+<script>
+    'use strict';
+	
+	//Задание №5
+	    /**
+     * Функция суммы.
+     * @param {number} a. Первый параметр
+     * @param {number} b. Второй параметр
+     * @returns {number}. Возвращает сумму двух чисел
+     */
+    function add(a, b) {
+        return a + b;
+    }
+
+    /**
+     * Функция вычитания.
+     * @param {number} a. Первый параметр
+     * @param {number} b. Второй параметр
+     * @returns {number}. Возвращает разность двух чисел
+     */
+    function reduce(a, b) {
+        return a - b;
+    }
+
+    /**
+     * Функция деления.
+     * @param {number} a. Первый параметр
+     * @param {number} b. Второй параметр
+     * @returns {number}. Возвращает деление двух чисел
+     */
+    function divide(a, b) {
+        return a / b;
+    }
+
+    /**
+     * Функция умножения.
+     * @param {number} a. Первый параметр
+     * @param {number} b. Второй параметр
+     * @returns {number}. Возвращает произведение двух чисел
+     */
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    /**
+     * Функция вызывает одну из арифметических операций и возвращает результат операции.
+     * @param {number} arg1. Первый параметр
+     * @param {number} arg2. Второй параметр
+     * @param {string} operation. Операция над аргументами, которую необходимо выполнить
+     * @returns {number} . Возвращает полученное значение, после выполнения одной из операции.
+     */
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case 'add':
+                return (add(arg1, arg2));
+            case 'reduce':
+                return(reduce(arg1, arg2));
+            case 'divide':
+                return(divide(arg1, arg2));
+            case 'multiply':
+                return(multiply(arg1, arg2));
+        }
+    }
+
+    // Вызываем функции и сразу выводим результат этих функций.
+    console.log(mathOperation(6, 2, 'add')); // Выведется число 8
+    console.log(mathOperation(6, 2, 'reduce')); // Выведется число 4
+    console.log(mathOperation(6, 2, 'divide')); // Выведется число 3
+    console.log(mathOperation(6, 2, 'multiply')); // Выведется число 12
+</script>
+</body>
+</html>
