@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 4. Задание 1</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+
+
+    let anyNumber = +prompt('Введите число от 0 до 999');
+
+
+    console.log(getNumber(anyNumber));
+
+    function getNumber(num) {
+        if (Number.isInteger(num) && num <= 999 && num >= 0){
+
+            const DigitsOfNumber = {};
+
+            DigitsOfNumber.first = num % 10;
+            DigitsOfNumber.second = Math.floor(num % 100 / 10);
+            DigitsOfNumber.third = Math.floor(num / 100);
+
+            return DigitsOfNumber;
+        } else {
+            console.log('Возникла ошибка! Необходимо ввести целое число от 0 до 999');
+            return {};
+        }
+
+    }
+
+</script>
+</body>
+</html>
